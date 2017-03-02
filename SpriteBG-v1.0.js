@@ -1,9 +1,9 @@
 /**
-	* SpriteBG Class
-	*
-	* @JosephNewYork
-	* BOX Creative NYC
-	*/
+  * SpriteBG Class
+  *
+  * @JosephNewYork
+  * BOX Creative NYC
+  */
 function SpriteBG() {
 	'use strict';
 	var currentFrame = 0,
