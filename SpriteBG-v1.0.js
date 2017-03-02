@@ -1,6 +1,11 @@
-'use strict';
-
+/**
+	* SpriteBG Class
+	*
+	* @JosephNewYork
+	* BOX Creative NYC
+	*/
 function SpriteBG() {
+	'use strict';
 	var currentFrame = 0,
 			settings = false,
 			sprites = [],
@@ -193,13 +198,3 @@ function SpriteBG() {
 	if(settings.onLoad) this.onLoad(settings.onLoad);
 	
 };
-
-
-
-
-
-
-
-
-
-
