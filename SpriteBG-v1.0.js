@@ -124,7 +124,7 @@ function SpriteBG() {
       if(CSS != positionStyle.innerHTML) positionStyle.innerHTML = CSS;
     };
     if(frame != currentFrame && settings.onPlayheadChange) {
-      settings.onPlayheadChange({
+      settings.onPlayheadChange.call(this, {
         frame: frame,
         percent: frame / settings.frames
       });
@@ -144,7 +144,7 @@ function SpriteBG() {
         image = sprites[0].image[0],
         img = new Image();
     img.onload = function() {
-      var renderOnLoad = onLoad(image);
+      var renderOnLoad = onLoad.call(self, image);
       if(renderOnLoad) self.render();
     };
     img.src = image;  
@@ -156,6 +156,9 @@ function SpriteBG() {
     playInterval = setInterval(function(){
       var nextFrame = currentFrame + 1;
       if(nextFrame > settings.frames) {
+        if(typeof settings.onPlayComplete !== 'undefined' && typeof settings.onPlayComplete === 'function') {
+          settings.onPlayComplete.call(self);
+        };
         if(typeof settings.loop !== 'undefined' && settings.loop == true) {
           nextFrame = 0;
           self.seek(nextFrame);
