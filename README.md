@@ -2,7 +2,7 @@
 Pure javascript image sprite animation engine.
 
 # Usage
-``
+```javascript
 var SPRITE = new SpriteBG({
      image:            'spritesheet.png',
      frames:           55,
@@ -16,4 +16,4 @@ var SPRITE = new SpriteBG({
      onLoad:           function(){}
 });
 SPRITE.render();
-``
+```
