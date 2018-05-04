@@ -5,15 +5,16 @@ Pure javascript image sprite animation engine.
 ```javascript
 var SPRITE = new SpriteBG({
      selector:         '#sprite-anim',
-     image:            'spritesheet.png',
      frames:           55,
-     width:            302,
-     height:           222,
      playOnRender:     true,
+     loop:             true,
      fps:              Math.round(1000/29),
      backgroundColor:  '#FFFFFF',
      onPlayheadChange: function(){},
-     onLoad:           function(){}
+     onLoad:           function(){ this.render(); },
+     onPlayComplete:   function(){}
+}, {
+     image:            'spritesheet.png',
+     height:           2400
 });
-SPRITE.render();
 ```
