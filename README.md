@@ -7,14 +7,23 @@ new SpriteBG( settingsObject, imageSettingsObject0, [imageSettingsObject1], [...
 
 # Settings Object
 - frames : **required** *integer*
+⋅⋅⋅ *The total ammount of frames for the entire spritesheet.*
 - selector : *string* Default: `'body'`
+⋅⋅⋅ *The HTML element that will retrieve the background CSS styling.*
 - backgroundColor: *string* Default: `false`
+⋅⋅⋅ *If set, set the element's CSS background-color style.*
 - attachment: *string* Default: `'scroll'`
+⋅⋅⋅ *If set, sets the element's CSS background-attachment style. (scroll, fixed)*
 - playOnRender: *bool* Default: `false`
+⋅⋅⋅ *If set to true, when the render occurs, so will play.*
 - fps: *number* Default: `29`
+⋅⋅⋅ *The framerate the animation will play. It basically sets the delay between rendering to `Math.round(1000/setting.fps)`*
 - onPlayheadChange: *function* Default: `false`
+⋅⋅⋅ *If set will be called when the frame is changed. Passes an informative event.*
 - onLoad: *function* Default: `false`
+⋅⋅⋅ *If set will be called when all sprite sheets are loaded. Passes an informative event.*
 - onPlayComplete: *function* Default: `false`
+⋅⋅⋅ *If set will be called everytime the animation plays to the last frame. Passes an informative event.*
 
 # Image Settings Object
 - image: **required** *string*
