@@ -46,13 +46,13 @@ onPlayComplete: *function* Default: `false`
 - height: **required** *integer*
 
 # API
-- {SpriteBG}.seek(frame)
-- {SpriteBG}.render()
-- {SpriteBG}.onLoad(onLoad)
-- {SpriteBG}.play()
-- {SpriteBG}.playTo(frame)
-- {SpriteBG}.stop()
-- {SpriteBG}.kill()
+- SpriteBG.seek(frame)
+- SpriteBG.render()
+- SpriteBG.onLoad(onLoad)
+- SpriteBG.play()
+- SpriteBG.playTo(frame)
+- SpriteBG.stop()
+- SpriteBG.kill()
 
 # Examples
 
