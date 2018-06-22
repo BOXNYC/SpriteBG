@@ -1,35 +1,34 @@
 # SpriteBG
 Pure javascript image sprite animation engine.
 
-# Basic Usage
+
+
+# Basic Usage Example
 Renders an plays a single-file sprite animation, and loops it.
 ```javascript
 var SPRITE = new SpriteBG({
-     selector:         '#sprite-anim',
+     selector:         '#sprite',
      frames:           55,
      playOnRender:     true,
      loop:             true,
-     fps:              15, // Eq: Math.round(1000/15),
+     fps:              15,
      backgroundColor:  '#FFFFFF',
-     onPlayheadChange: function(event){ console.log(event); },
      onLoad:           function(){
           this.render();
-          // this.play();
-     },
-     onPlayComplete:   function(event){ console.log(event); }
+     }
 }, {
      image:            'spritesheet.png',
      height:           2400
 });
 ```
 
-# Basic API Usage
+# Basic API Usage Example
 Renders an plays a single-file sprite animation, and loops it.
 ```javascript
 var okToPlay = false;
 
 var SPRITE = new SpriteBG({
-     selector:         '#sprite-anim',
+     selector:         '#sprite',
      frames:           55,
      onLoad:           function(){
           this.render();
@@ -45,11 +44,11 @@ document.getElementById('play-btn').addEventListener('click', function(){
 }, false);
 ```
 
-# Multiple cascading-stacked sprite sheets
+# Multiple Cascading-stacked Sprite Sheets Example
 Using multiple sprite sheets is good for insanely long animations, AKA HUGE sprite sheets. The Spritesheets are laid out using CSS3's multiple background image ability.
 ```javascript
 var SPRITE = new SpriteBG({
-     selector:         '#sprite-anim',
+     selector:         '#sprite',
      frames:           55,
      onLoad:           function(){
           this.render();
