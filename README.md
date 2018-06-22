@@ -8,7 +8,7 @@ var SPRITE = new SpriteBG({
      frames:           55,
      playOnRender:     true,
      loop:             true,
-     fps:              Math.round(1000/29),
+     fps:              29, // Eq: Math.round(1000/29),
      backgroundColor:  '#FFFFFF',
      onPlayheadChange: function(){},
      onLoad:           function(){
