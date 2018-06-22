@@ -37,7 +37,7 @@ function SpriteBG() {
       if(und(settings.curtainBelowOffset)) settings.curtainBelowOffset = 0;
       if(und(settings.curtainBelow)) settings.curtainBelow = false;
       if(und(settings.backgroundColor)) settings.backgroundColor = false;
-      if(und(settings.attachment)) settings.attachment = 'fixed';
+      if(und(settings.attachment)) settings.attachment = 'scroll';
       if(und(settings.playOnRender)) settings.playOnRender = false;
       if(und(settings.fps)) settings.fps = Math.round(1000/29);
         else settings.fps = Math.round(1000/settings.fps);
