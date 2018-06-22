@@ -7,7 +7,7 @@ new SpriteBG( settingsObject, imageSettingsObject0, [imageSettingsObject1], [...
 
 # Settings Object
 frames : **required** *integer*
-`*The total ammount of frames for the entire spritesheet.*`
+*`The total ammount of frames for the entire spritesheet.`*
 
 selector : *string* Default: `'body'`
 *The HTML element that will retrieve the background CSS styling.*
