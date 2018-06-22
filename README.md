@@ -22,6 +22,26 @@ var SPRITE = new SpriteBG({
 });
 ```
 
+# Multiple cascading-stacked sprite sheets
+```javascript
+var SPRITE = new SpriteBG({
+     selector:         '#sprite-anim',
+     frames:           55,
+     onLoad:           function(){
+          this.render();
+     }
+}, {
+     image:            'spritesheet.0.png',
+     height:           2400
+}, {
+     image:            'spritesheet.1.png',
+     height:           2400
+}, {
+     image:            'spritesheet.2.png',
+     height:           2400
+});
+```
+
 # Usefull links
 1. https://instantsprite.com/ ~ Creates a sprite out of images sequences!
 2. https://www.iloveimg.com/crop-image ~ Crops HUGE images PhotoShop wont!
