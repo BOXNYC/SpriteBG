@@ -23,6 +23,7 @@ var SPRITE = new SpriteBG({
 ```
 
 # Multiple cascading-stacked sprite sheets
+Using multiple sprite sheets is good for insanely long animations, AKA HUGE sprite sheets. The Spritesheets are laid out using CSS3's multiple background image ability.
 ```javascript
 var SPRITE = new SpriteBG({
      selector:         '#sprite-anim',
