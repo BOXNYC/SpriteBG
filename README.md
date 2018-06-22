@@ -27,6 +27,7 @@ var SPRITE = new SpriteBG({
 Renders an plays a single-file sprite animation, and loops it.
 ```javascript
 var okToPlay = false;
+
 var SPRITE = new SpriteBG({
      selector:         '#sprite-anim',
      frames:           55,
