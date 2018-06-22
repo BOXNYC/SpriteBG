@@ -10,12 +10,12 @@ var SPRITE = new SpriteBG({
      loop:             true,
      fps:              29, // Eq: Math.round(1000/29),
      backgroundColor:  '#FFFFFF',
-     onPlayheadChange: function(){},
+     onPlayheadChange: function(event){ console.log(event); },
      onLoad:           function(){
           this.render();
           // this.play();
      },
-     onPlayComplete:   function(){}
+     onPlayComplete:   function(event){ console.log(event); }
 }, {
      image:            'spritesheet.png',
      height:           2400
