@@ -1,9 +1,37 @@
 # SpriteBG
 Pure javascript image sprite animation engine.
 
+```javascript
+new SpriteBG( settingsObject, imageSettingsObject0, [imageSettingsObject1], [...] )
+```
 
+# Settings Object
+- frames : **required** *integer*
+- selector : *string* Default: `'body'`
+- backgroundColor: *string* Default: `false`
+- attachment: *string* Default: `'scroll'`
+- playOnRender: *bool* Default: `false`
+- fps: *number* Default: `29`
+- onPlayheadChange: *function* Default: `false`
+- onLoad: *function* Default: `false`
+- onPlayComplete: *function* Default: `false`
 
-# Basic Usage Example
+# Image Settings Object
+- image: **required** *string*
+- height: **required** *integer*
+
+# API
+- {SpriteBG}.seek(frame)
+- {SpriteBG}.render()
+- {SpriteBG}.onLoad(onLoad)
+- {SpriteBG}.play()
+- {SpriteBG}.playTo(frame)
+- {SpriteBG}.stop()
+- {SpriteBG}.kill()
+
+# Examples
+
+## Basic Usage Example
 Renders an plays a single-file sprite animation, and loops it.
 ```javascript
 var SPRITE = new SpriteBG({
@@ -22,7 +50,7 @@ var SPRITE = new SpriteBG({
 });
 ```
 
-# Basic API Usage Example
+## Basic API Usage Example
 Renders an plays a single-file sprite animation, and loops it.
 ```javascript
 var okToPlay = false;
@@ -44,7 +72,7 @@ document.getElementById('play-btn').addEventListener('click', function(){
 }, false);
 ```
 
-# Multiple Cascading-stacked Sprite Sheets Example
+## Multiple Cascading-stacked Sprite Sheets Example
 Using multiple sprite sheets is good for insanely long animations, AKA HUGE sprite sheets. The Spritesheets are laid out using CSS3's multiple background image ability.
 ```javascript
 var SPRITE = new SpriteBG({
