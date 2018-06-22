@@ -11,7 +11,10 @@ var SPRITE = new SpriteBG({
      fps:              Math.round(1000/29),
      backgroundColor:  '#FFFFFF',
      onPlayheadChange: function(){},
-     onLoad:           function(){ this.render(); },
+     onLoad:           function(){
+          this.render();
+          // this.play();
+     },
      onPlayComplete:   function(){}
 }, {
      image:            'spritesheet.png',
