@@ -1,14 +1,15 @@
 # SpriteBG
 Pure javascript image sprite animation engine.
 
-# Usage
+# Basic Usage
+Renders an plays a single-file sprite animation, and loops it.
 ```javascript
 var SPRITE = new SpriteBG({
      selector:         '#sprite-anim',
      frames:           55,
      playOnRender:     true,
      loop:             true,
-     fps:              29, // Eq: Math.round(1000/29),
+     fps:              15, // Eq: Math.round(1000/15),
      backgroundColor:  '#FFFFFF',
      onPlayheadChange: function(event){ console.log(event); },
      onLoad:           function(){
@@ -20,6 +21,27 @@ var SPRITE = new SpriteBG({
      image:            'spritesheet.png',
      height:           2400
 });
+```
+
+# Basic API Usage
+Renders an plays a single-file sprite animation, and loops it.
+```javascript
+var okToPlay = false;
+var SPRITE = new SpriteBG({
+     selector:         '#sprite-anim',
+     frames:           55,
+     onLoad:           function(){
+          this.render();
+          okToPlay = true;
+     }
+}, {
+     image:            'spritesheet.png',
+     height:           2400
+});
+
+document.getElementById('play-btn').addEventListener('click', function(){
+     if(okToPlay) SPRITE.play();
+}, false);
 ```
 
 # Multiple cascading-stacked sprite sheets
