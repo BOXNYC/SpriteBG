@@ -109,3 +109,9 @@ var SPRITE = new SpriteBG({
 2. https://www.iloveimg.com/crop-image ~ Crops HUGE images PhotoShop wont!
 3. https://www.iloveimg.com/resize-image ~ Resizes HUGE images PhotoShop wont!
 4. http://compresspng.com/ ~ Compresses PNGs down to nothing!
+
+
+# Future
+v1.1) Infinite constructor arguments with type checking for setting of options and images options. Retaining array option for image options attributes.
+v2.0) Get image option height dynamically. Remove image option as object, only accept string or array of strings.
+v3.0) Add low-res low-quality quick image loading system
