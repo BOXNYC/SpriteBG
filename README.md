@@ -113,5 +113,7 @@ var SPRITE = new SpriteBG({
 
 # Future
 v1.1) Infinite constructor arguments with type checking for setting of options and images options. Retaining array option for image options attributes.
+
 v2.0) Get image option height dynamically. Remove image option as object, only accept string or array of strings.
+
 v3.0) Add low-res low-quality quick image loading system
