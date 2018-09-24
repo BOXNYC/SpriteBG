@@ -114,10 +114,12 @@ var SPRITE = new SpriteBG({
 # Future
 v1.1) Infinite constructor arguments with type checking for setting of options and images options. Retaining array option for image options attributes.
 
-v1.2) Set selector element size if selector is not body or html element.
+v1.2) Add data attribute auto initiators (<div data-spritebg="frames=55&image=img1.png|2400,img2.png|2400"></div>) and jQuery plugin.
+
+v1.3) Set selector element size if selector is not body or html element.
 
 v2.0) Get image option height dynamically. Remove image option as object, only accept string or array of strings.
 
 v3.0) Add low-res low-quality quick image loading system
 
-v4.0) Add scalability and background-size css sizing.
+v4.0) Add horizontal and rows/colums sprite sheet layouts.
