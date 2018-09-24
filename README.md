@@ -114,7 +114,7 @@ var SPRITE = new SpriteBG({
 # Future
 v1.1) Infinite constructor arguments with type checking for setting of options and images options. Retaining array option for image options attributes.
 
-v1.2) Add data attribute auto initiators (<div data-spritebg="frames=55&image=img1.png|2400,img2.png|2400"></div>) and jQuery plugin.
+v1.2) Add data attribute auto initiators (`<div data-spritebg="frames=55&image=img1.png|2400,img2.png|2400"></div>`) and jQuery plugin.
 
 v1.3) Set selector element size if selector is not body or html element.
 
