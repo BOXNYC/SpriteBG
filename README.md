@@ -2,7 +2,7 @@
 Pure javascript image sprite animation engine.
 
 ```javascript
-new SpriteBG( settingsObject, imageSettingsObject0, [imageSettingsObject1], [...] )
+new SpriteBG( settingsObject, imageSettingsObject )
 ```
 
 # Settings Object
@@ -34,8 +34,8 @@ onPlayComplete: *function* Default: `false`
 *If set will be called everytime the animation plays to the last frame. Passes an informative event.*
 
 # Image Settings Object
-- image: **required** *string*
-- height: **required** *integer*
+- image: **required** *string/array*
+- height: **required** *integer/array*
 
 # API
 - SpriteBG.seek(frame)
@@ -99,14 +99,8 @@ var SPRITE = new SpriteBG({
           this.render();
      }
 }, {
-     image:            'spritesheet.0.png',
-     height:           2400
-}, {
-     image:            'spritesheet.1.png',
-     height:           2400
-}, {
-     image:            'spritesheet.2.png',
-     height:           2400
+     image:            ['spritesheet.0.png', 'spritesheet.1.png', 'spritesheet.2.png'],
+     height:           [2400, 2400, 2400]
 });
 ```
 
