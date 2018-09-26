@@ -112,7 +112,7 @@ var SPRITE = new SpriteBG({
 
 
 # Future
-v1.1) Infinite constructor arguments with type checking for setting of options and images options. Retaining array option for image options attributes. [1.1](../../../tree/1.1)
+v1.1) Infinite constructor arguments with type checking for setting of options and images options. Retaining array option for image options attributes. [1.1](../../tree/1.1)
 
 v1.2) Add data attribute auto initiators (`<div data-spritebg="frames=55&image=img1.png|2400,img2.png|2400"></div>`) and jQuery plugin.
 
