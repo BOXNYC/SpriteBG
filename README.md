@@ -123,3 +123,9 @@ v2.0) Get image option height dynamically. Remove image option as object, only a
 v3.0) Add low-res low-quality quick image loading system
 
 v4.0) Add horizontal and rows/colums sprite sheet layouts.
+
+
+Optimization after line 111:
+```
+if(cssOffset <= 0 && cssOffset > -(sprite.height[heightIndex]+sprite.frameHeight)) {} else { offset = -sprite.height[heightIndex]; }
+```
