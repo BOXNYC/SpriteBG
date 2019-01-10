@@ -109,6 +109,7 @@ var SPRITE = new SpriteBG({
 2. https://www.iloveimg.com/crop-image ~ Crops HUGE images PhotoShop wont!
 3. https://www.iloveimg.com/resize-image ~ Resizes HUGE images PhotoShop wont!
 4. http://compresspng.com/ ~ Compresses PNGs down to nothing!
+5. https://image.online-convert.com/convert-to-jpg ~ Convert video to jpgs
 
 
 # Future
